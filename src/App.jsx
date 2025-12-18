@@ -2,15 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Dashboard from './components/Dashboard'
 
 function App(){
+  let name="kaviya"
+  let occ="student"
   return(
-    <>
-      <h1>Heyy!...</h1>
-      <h2>Hello</h2>
-    </>
+    <Dashboard name={name} occ={occ}></Dashboard>
   )
-
 }
 
 export default App
