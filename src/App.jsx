@@ -5,10 +5,15 @@ import './App.css'
 import Dashboard from './components/Dashboard'
 
 function App(){
-  let name="kaviya"
-  let occ="student"
+  const [name,setname]=useState("kaviya")
+  const [occ,setOcc]=useState("student")
+  function nameChange(){
+    setname"Ravi"
+    setOcc"developer"
+    console.log(name)
+  }
   return(
-    <Dashboard name={name} occ={occ}></Dashboard>
+    <Dashboard name={name} occ={occ} nameChange={nameChange}></Dashboard>
   )
 }
 
